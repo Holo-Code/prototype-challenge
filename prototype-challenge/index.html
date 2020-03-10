@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>prototype-challenge</title>
+  </head>
+  <body>
+    <h1 id="replace">Replace This</h1>
+    <script>
+
+    menuReplace = document.querySelector('#replace');
+    page = -1;
+
+    function display(){
+
+      menus = [{title: "Menu 1"}, {title: "Menu 2"}, {title: "Menu 3"}];
+
+
+      menuReplace.textContent = menus[page].title;
+    }
+
+    function next(){
+      page = page + 1;
+
+      display();
+    }
+
+    replace.addEventListener('click', next);
+
+    </script>
+  </body>
+</html>
